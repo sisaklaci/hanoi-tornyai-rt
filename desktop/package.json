@@ -1,0 +1,8 @@
+{
+  "name": "hanoi-tornyai-rt",
+  "productName": "Hanoi Tornyai RT",
+  "version": "1.1.0",
+  "description": "Hanoi tornyai - valós idejű raytracing játék",
+  "author": "Sisak László (helmetsoft.com)",
+  "main": "main.js"
+}

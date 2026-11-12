@@ -12,9 +12,13 @@ Hanoi tornyai játék Androidra, valós idejű sugárkövetéssel (WebGL fragmen
 - Hang, rezgés, kameraforgatás húzással
 
 ## Telepítés
-APK: lásd a Releases oldalt. Android 7.0+ (minSdk 24).
+- **Android:** `HanoiTornyaiRT.apk` (Releases), Android 7.0+.
+- **Windows 10/11:** `HanoiTornyaiRT-win-x64.zip` (Releases) – kicsomagolás után `HanoiTornyaiRT.exe`. Billentyűk: 1/2/3, Z, H, R, Esc, F11.
 
-## Build (Gradle nélkül)
+## Windows build
+`build-win.sh`: Electron win32-x64 + `desktop/` (main/preload) + `app/assets/index.html`; az exe ikonja és verzióadatai `resedit`-tel kerülnek be (wine nélkül).
+
+## Android build (Gradle nélkül)
 `build.sh`: javac → dx → aapt2 link → 4 bájtos igazítás + APK Signature Scheme v2 (`tools/apkfinish.py`).
 Szükséges: `android.jar` (API 33), `aapt2`, `dx` – az elérési utakat a `build.sh` elején kell beállítani.
 Az aláíró kulcs a `keys/` mappába kerül (nincs verziókezelve).

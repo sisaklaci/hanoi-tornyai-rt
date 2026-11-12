@@ -2,3 +2,4 @@ build/
 keys/
 *.apk
 *.aligned
+dist/
